@@ -17,7 +17,7 @@ def is2020_3():
     while test.__len__() > 2:
         index = int(test.pop())
         sums = look_for_sum(2020 - index)
-        if (index + sums[0] + sums[1]) == 2020:
+        if index + sums[0] + sums[1] == 2020:
             print(index, sums[0], sums[1])
             return index * sums[0] * sums[1]
 
