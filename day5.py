@@ -49,7 +49,7 @@ def find_seat_ids():
         row = binary_splitter(boarding_pass[:-3], 0, 127)
         column = binary_splitter(boarding_pass[-3:], 0, 7)
         seat_ids.append(row * 8 + column)
-    return seat_IDs
+    return seat_ids
 
 
 # part 1
